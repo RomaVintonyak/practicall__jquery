@@ -50,4 +50,16 @@ jQuery(document).ready(function () {
             scrollTop: 0
         }, 1000);
     });
+    /*counter jQuery*/
+    $(".count").each(function(){
+        $(this).prop('Counter', 0).animate({
+            Counter:$(this).text()
+        },{
+            duration:4000,
+            easing:'swing',
+            step:function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
 });

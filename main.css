@@ -286,3 +286,48 @@ span{
 .btn-top:hover{
     background-color: #27ae60;
 }
+/*counter numbers*/
+.counter__number{
+    text-align: center;
+    color: #808080;
+    background-color: #f5f5f5;
+    padding: 25px;
+    height: 280px;
+    width: 100%;
+}
+.col-fourth{
+    width: 23.3%;
+}
+.col-fourth{
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+.end{
+    margin-right: 0!important;
+}
+.wraper{
+    width: 100%;
+    margin: 30px auto;
+    position: relative;
+}
+.counter{
+    background: #ffffff;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+.count-text{
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.fa-2x{
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #4ad1e5;
+}
