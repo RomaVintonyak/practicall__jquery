@@ -34,4 +34,20 @@ jQuery(document).ready(function () {
         prevImage.fadeIn(1000);
         prevImage.addClass('curry');
     });
+    /*scrooll top btn*/
+    var scrollBtn = $(".btn-top");
+    scrollBtn.hide();
+    $(window).on("scroll", function () {
+       if($(this).scrollTop() >= 100){
+            scrollBtn.fadeIn(1000);
+        }else{
+           scrollBtn.fadeOut(1000);
+       }
+    });
+    scrollBtn.on("click", function (event) {
+        event.preventDefault();
+        $("body, html").animate({
+            scrollTop: 0
+        }, 1000);
+    });
 });

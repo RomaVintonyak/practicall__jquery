@@ -4,6 +4,7 @@ body{
     font-family: Arial, sans-serif;
     background-color: #cfe3e7;
     overflow-x: hidden;
+    height: 2048px;
 }
 *before, *after{
     box-sizing: border-box;
@@ -267,4 +268,21 @@ span{
     position: relative;
     top: 240px;
     right: 350px;
+}
+/*back to top*/
+.btn-top{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #2ecc71;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 15px 40px;
+    border-radius: 10px;
+}
+.btn-top:hover{
+    background-color: #27ae60;
 }
