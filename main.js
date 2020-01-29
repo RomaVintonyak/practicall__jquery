@@ -94,7 +94,27 @@ jQuery(document).ready(function () {
     /*skillbar*/
     $(".skillbar").each(function () {
         $(this).find('.skillbar-bar').animate({
-            width:$(this).attr('data-percent')
+            width: $(this).attr('data-percent')
         }, 4000);
     });
+    /*acardeon*/
+    var acardeon = function () {
+        var data = $(".acardeon").attr('data-acardeon');
+        $(".acardeon__header").on("click", function () {
+            if (data === "close") {
+                $(".acardeon__body").slideUp();
+                if ($(this).hasClass("active")) {
+                    $(this).toggleClass("active");
+                } else {
+                    $(".acardeon__header").removeClass("active");
+                    $(this).toggleClass("active");
+                }
+            }
+            else {
+                $(this).toggleClass("active");
+            }
+            $(this).next(".acardeon__body").not(":animated").slideToggle();
+        });
+    }
+    acardeon();
 });
