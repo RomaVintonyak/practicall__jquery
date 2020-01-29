@@ -4,7 +4,7 @@ body{
     font-family: Arial, sans-serif;
     background-color: #cfe3e7;
     overflow-x: hidden;
-    height: 2048px;
+    height: 4048px;
 }
 *before, *after{
     box-sizing: border-box;
@@ -487,4 +487,57 @@ span{
         opacity: 0;
         margin-top: -50px;
     }
+}
+/*skillbar*/
+.skillbar__wraper{
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+.skillbar{
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+    background: #eeeeee;
+    height: 50px;
+    border-radius: 3px;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+.skillbar-title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 9px;
+    color: #ffffff;
+    background: #6adcfa;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.skillbar-title span{
+    display: block;
+    background: rgba(0,0,0 0.1);
+    padding: 0 20px;
+    height: 34px;
+    line-height: 35px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.skillbar-bar{
+    height: 50px;
+    width: 0;
+    background: #6adcfa;
+    border-radius: 3px;
+}
+.skill-bar-percent{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 11px;
+    height: 50px;
+    line-height: 50px;
+    color: #444;
+    color: rgba(0,0,0 0.4);
 }
