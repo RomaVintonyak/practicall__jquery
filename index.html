@@ -16,147 +16,209 @@
     <title>jquery/practicall</title>
 </head>
 <body>
-<div class="container">
-    <div class="menu">
-        <div class="icon">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="links">
-            <a href="#" class="menu-item">Home</a>
-            <a href="#" class="menu-item">About</a>
-            <a href="#" class="menu-item">Contact</a>
-        </div>
-    </div>
-    <!--menu with flex-->
-    <div class="bar">
-        <nav id="desktop">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Dowload</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div id="burg">
-        <a href="#">
-            <span class="bar" id="top"></span>
-            <span class="bar" id="middle"></span>
-            <span class="bar" id="bottom"></span>
-        </a>
-    </div>
-    <div class="mobile-tab">
-        <nav id="mobile-bar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Dowload</a></li>
-            </ul>
-        </nav>
-    </div>
-    <!--slider jquery-->
-    <div class="slider__block">
-        <div class="prev n"><a href="#">Prev</a></div>
-        <div class="slider">
-            <div class="img curry">1</div>
-            <div class="img">2</div>
-            <div class="img">3</div>
-            <div class="img">4</div>
-            <div class="img">5</div>
-        </div>
-        <div class="next n"><a href="#">Next</a></div>
-    </div>
-    <!--counter numbers-->
-    <div class="counter__number">
-        <h1>jQuery number animation</h1>
-        <div class="wraper">
-            <div class="counter col-fourth">
-                <i class="fas fa-code fa-2x"></i>
-                <h2 class="count">3435</h2>
-                <p class="count-text">Text</p>
-            </div>
-            <div class="counter col-fourth">
-                <i class="fas fa-coffee fa-2x"></i>
-                <h2 class="count">3234435</h2>
-                <p class="count-text">Text</p>
-            </div>
-            <div class="counter col-fourth">
-                <i class="far fa-lightbulb fa-2x"></i>
-                <h2 class="count">343555</h2>
-                <p class="count-text">Text</p>
-            </div>
-            <div class="counter col-fourth end">
-                <i class="fas fa-bug fa-2x"></i>
-                <h2 class="count">343135</h2>
-                <p class="count-text">Text</p>
+<div class="main-wraper">
+    <div class="slide" data-background="#3498db">
+        <div class="inside">
+            <p>1</p>
+            <div class="container">
+                <div class="menu">
+                    <div class="icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="links">
+                        <a href="#" class="menu-item">Home</a>
+                        <a href="#" class="menu-item">About</a>
+                        <a href="#" class="menu-item">Contact</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-to do application-->
-    <div class="to__do-wraper">
-        <div class="to_do-content">
-            <div id="tasks">
-                <div id="notification">tasks list is empty</div>
-                <ul id="tasksList">
-
-                </ul>
-            </div>
-            <div id="footer">
-                <input type="text" id="taskInput" placeholder="Your Task">
-                <button id="taskAdd">+</button>
-            </div>
-        </div>
-    </div>
-    <!---->
-    <div class="skillbar__wraper">
-        <h2>My skils</h2>
-        <div class="skillbar" data-percent="75%">
-            <div class="skillbar-title" style="background: #88cd2a"><span>HTML5</span></div>
-            <div class="skillbar-bar" style="background: #88cd2a"></div>
-            <div class="skill-bar-percent">65%</div>
-        </div>
-        <div class="skillbar" data-percent="85%">
-            <div class="skillbar-title" style="background: #00a8ff"><span>CSS</span></div>
-            <div class="skillbar-bar" style="background: #00a8ff"></div>
-            <div class="skill-bar-percent">85%</div>
-        </div>
-        <div class="skillbar" data-percent="45%">
-            <div class="skillbar-title" style="background: #243046"><span>jQuery</span></div>
-            <div class="skillbar-bar" style="background: #243046"></div>
-            <div class="skill-bar-percent">45%</div>
-        </div>
-        <div class="skillbar" data-percent="35%">
-            <div class="skillbar-title" style="background: #e7d456"><span>Java<b>S</b>cript</span></div>
-            <div class="skillbar-bar" style="background: #e7d456"></div>
-            <div class="skill-bar-percent">35%</div>
-        </div>
-    </div>
-    <!--acardeon block-->
-    <div class="acardeon__wraper">
-        <ul class="acardeon" data-acardeon="open">
-            <li class="acardeon__content">
-                <div class="acardeon__header">First</div>
-                <div class="acardeon__body">lorem ipsum dolor sit amet.</div>
-            </li>
-            <li class="acardeon__content">
-                <div class="acardeon__header">Second</div>
-                <div class="acardeon__body">lorem ipsum dolor sit amet.</div>
-            </li>
-            <li class="acardeon__content">
-                <div class="acardeon__header">Third</div>
-                <div class="acardeon__body">lorem ipsum dolor sit amet.</div>
-            </li>
-        </ul>
     </div>
 </div>
+<div class="main-wraper">
+    <div class="slide" data-background="#34978b">
+        <div class="inside">
+            <p>2</p>
+            <div class="container">
+                <!--menu with flex-->
+                <div class="bar">
+                    <nav id="desktop">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Dowload</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="burg">
+                    <a href="#">
+                        <span class="bar" id="top"></span>
+                        <span class="bar" id="middle"></span>
+                        <span class="bar" id="bottom"></span>
+                    </a>
+                </div>
+                <div class="mobile-tab">
+                    <nav id="mobile-bar">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Dowload</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-wraper">
+    <div class="slide" data-background="#4568db">
+        <div class="inside">
+            <p>3</p>
+            <div class="container">
+                <!--slider jquery-->
+                <div class="slider__block">
+                    <div class="prev n"><a href="#">Prev</a></div>
+                    <div class="slider">
+                        <div class="img curry">1</div>
+                        <div class="img">2</div>
+                        <div class="img">3</div>
+                        <div class="img">4</div>
+                        <div class="img">5</div>
+                    </div>
+                    <div class="next n"><a href="#">Next</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-wraper">
+    <div class="slide" data-background="#ab18db">
+        <div class="inside">
+            <p>4</p>
+            <div class="container">
+                <!--counter numbers-->
+                <div class="counter__number">
+                    <h1>jQuery number animation</h1>
+                    <div class="wraper">
+                        <div class="counter col-fourth">
+                            <i class="fas fa-code fa-2x"></i>
+                            <h2 class="count">3435</h2>
+                            <p class="count-text">Text</p>
+                        </div>
+                        <div class="counter col-fourth">
+                            <i class="fas fa-coffee fa-2x"></i>
+                            <h2 class="count">3234435</h2>
+                            <p class="count-text">Text</p>
+                        </div>
+                        <div class="counter col-fourth">
+                            <i class="far fa-lightbulb fa-2x"></i>
+                            <h2 class="count">343555</h2>
+                            <p class="count-text">Text</p>
+                        </div>
+                        <div class="counter col-fourth end">
+                            <i class="fas fa-bug fa-2x"></i>
+                            <h2 class="count">343135</h2>
+                            <p class="count-text">Text</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-wraper">
+    <div class="slide" data-background="#1238db">
+        <div class="inside">
+            <p>5</p>
+            <div class="container">
+                <!-to do application-->
+                <div class="to__do-wraper">
+                    <div class="to_do-content">
+                        <div id="tasks">
+                            <div id="notification">tasks list is empty</div>
+                            <ul id="tasksList">
 
+                            </ul>
+                        </div>
+                        <div id="footer">
+                            <input type="text" id="taskInput" placeholder="Your Task">
+                            <button id="taskAdd">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-wraper">
+    <div class="slide" data-background="#3498ff">
+        <div class="inside">
+            <p>6</p>
+            <div class="container">
+                <!--skillbar-->
+                <div class="skillbar__wraper">
+                    <h2>My skils</h2>
+                    <div class="skillbar" data-percent="75%">
+                        <div class="skillbar-title" style="background: #88cd2a"><span>HTML5</span></div>
+                        <div class="skillbar-bar" style="background: #88cd2a"></div>
+                        <div class="skill-bar-percent">65%</div>
+                    </div>
+                    <div class="skillbar" data-percent="85%">
+                        <div class="skillbar-title" style="background: #00a8ff"><span>CSS</span></div>
+                        <div class="skillbar-bar" style="background: #00a8ff"></div>
+                        <div class="skill-bar-percent">85%</div>
+                    </div>
+                    <div class="skillbar" data-percent="45%">
+                        <div class="skillbar-title" style="background: #243046"><span>jQuery</span></div>
+                        <div class="skillbar-bar" style="background: #243046"></div>
+                        <div class="skill-bar-percent">45%</div>
+                    </div>
+                    <div class="skillbar" data-percent="35%">
+                        <div class="skillbar-title" style="background: #e7d456"><span>Java<b>S</b>cript</span></div>
+                        <div class="skillbar-bar" style="background: #e7d456"></div>
+                        <div class="skill-bar-percent">35%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-wraper">
+    <div class="slide" data-background="#7897db">
+        <div class="inside">
+            <p>7</p>
+            <div class="container">
+                <!--acardeon block-->
+                <div class="acardeon__wraper">
+                    <ul class="acardeon" data-acardeon="open">
+                        <li class="acardeon__content">
+                            <div class="acardeon__header">First</div>
+                            <div class="acardeon__body">lorem ipsum dolor sit amet.</div>
+                        </li>
+                        <li class="acardeon__content">
+                            <div class="acardeon__header">Second</div>
+                            <div class="acardeon__body">lorem ipsum dolor sit amet.</div>
+                        </li>
+                        <li class="acardeon__content">
+                            <div class="acardeon__header">Third</div>
+                            <div class="acardeon__body">lorem ipsum dolor sit amet.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!--back to top button-->
 <button class="btn-top" title="Go to top">Наверх</button>
 <script type="text/javascript" src="jquery-3.4.1.js"></script>
+<!--scrolly plagin-->
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2542/jquery.scrollie.min_1.js"></script>
 <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
