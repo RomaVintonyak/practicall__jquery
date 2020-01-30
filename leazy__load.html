@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Font Awesome -->
+    <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <style type="text/css">
+        body{
+            background: #f6f6f6;
+            width: 400px;
+            margin: 20px auto;
+            font: normal 13px/100% sans-serif;
+            color: #444444;
+        }
+        div{
+            display: none;
+            padding: 10px;
+            border-width: 0 1px 1px 0;
+            border-style: solid;
+            border-color: #ffffff;
+            box-shadow: 0 1px 1px #ccc;
+            margin-bottom: 5px;
+            background-color: #f1f1f1;
+        }
+        a, a:visited{
+            color: #33739e;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+        #load-more{
+            padding: 10px;
+            text-align: center;
+            background-color: #33739e;
+            color: #ffffff;
+            border-width: 0 1px 1px 0;
+            border-style: solid;
+            border-color: #ffffff;
+            box-shadow: 0 1px 1px #cccccc;
+            transition: all 0.6s ease-in-out;
+        }
+        #load-more:hover{
+            background-color: #ffffff;
+            color: #33739e;
+        }
+    </style>
+    <title>load more</title>
+</head>
+<body>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<div>"content"</div>
+<a href="#" id="load-more">Load More</a>
+<script type="text/javascript" src="jquery-3.4.1.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        $("div").slice(0, 4).show();
+        $("#load-more").on("click", function (event) {
+            event.preventDefault();
+            $("div:hidden").slice(0, 4).slideDown();
+        });
+    });
+</script>
+</body>
+</html>
